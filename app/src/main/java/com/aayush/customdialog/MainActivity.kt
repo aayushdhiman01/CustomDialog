@@ -1,9 +1,12 @@
 package com.aayush.customdialog
 
 import android.app.Dialog
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ViewGroup
+import android.view.Window
 import android.widget.Button
+import android.widget.RadioGroup
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var update:Button
@@ -24,6 +27,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             dialog.show()
+           
         }
     }
 }

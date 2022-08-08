@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Your Address"
+        android:layout_below="@id/etdName"
         android:layout_margin="20dp"
         android:id="@+id/etdAddress"
         />
@@ -22,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:layout_below="@id/etdAddress"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rbdMale"
@@ -48,15 +50,20 @@
     <EditText
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_below="@id/rgdGender"
         android:id="@+id/etdOtherSpecify"
         android:hint="Specify"
         android:layout_margin="20dp"
         android:visibility="invisible"/>
+
     <Button
+        android:id="@+id/btdUpdate2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/etdOtherSpecify"
         android:layout_gravity="center"
-        android:text="Update"
-        android:id="@+id/btdUpdate2"
-        />
-</LinearLayout>
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Update" />
+</RelativeLayout>
