@@ -7,19 +7,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Your Name"
+        android:layout_margin="20dp"
         android:id="@+id/etdName"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Your Address"
+        android:layout_margin="20dp"
         android:id="@+id/etdAddress"
         />
     <RadioGroup
         android:id="@+id/rgdGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_margin="20dp"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rbdMale"
@@ -48,6 +50,7 @@
         android:layout_width="match_parent"
         android:id="@+id/etdOtherSpecify"
         android:hint="Specify"
+        android:layout_margin="20dp"
         android:visibility="invisible"/>
     <Button
         android:layout_width="wrap_content"
