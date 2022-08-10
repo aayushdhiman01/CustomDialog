@@ -34,17 +34,22 @@ class MainActivity : AppCompatActivity() {
             dialog.setContentView(dialogBinding.root)
 //            dialog.window?.setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.WRAP_CONTENT)
             val update2=dialog.findViewById<Button>(R.id.btdUpdate2)
+            if(binding.etGender.text.toString().equals("Male")) {
+                dialogBinding.rbdMale.isChecked=true
+            }
+            else if(binding.etGender.text.toString().equals("Female")) {
+                dialogBinding.rbdFemale.isChecked=true
+            }
+            else if(binding.etGender.text.toString().equals("Other")) {
+                dialogBinding.rbdOther.isChecked=true
+            }
             update2.setOnClickListener{
                 binding.etName.setText(dialogBinding.etdName.text.toString())
                 binding.etAddress.setText(dialogBinding.etdAddress.text.toString())
-                if(binding.etGender.text.toString().equals("Male")) {
-                    dialogBinding.rbdMale.isChecked=true
-                }
-                else if(binding.etGender.text.toString().equals("Female")) {
-                    dialogBinding.rbdFemale.isChecked=true
-                }
-                else if(binding.etGender.text.toString().equals("Other")) {
-                    dialogBinding.rbdOther.isChecked=true
+                when(dialogBinding.rgdGender.id){
+                    R.id.rbdMale-> binding.tvGender.setText("Male")
+                    R.id.rbdFemale-> binding.tvGender.setText("Female")
+                    R.id.rbdOther-> binding.tvGender.setText("Other")
                 }
                 dialog.dismiss()
             }
