@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/CustomDialog/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/CustomDialog/app/src/main/res/layout/customdialog.xml" value="0.25" />
+        <entry key="..\:/CustomDialog/app/src/main/res/layout/fragment_dialog.xml" value="0.1" />
       </map>
     </option>
   </component>
