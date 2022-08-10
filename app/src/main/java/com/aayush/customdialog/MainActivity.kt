@@ -37,9 +37,15 @@ class MainActivity : AppCompatActivity() {
             update2.setOnClickListener{
                 binding.etName.setText(dialogBinding.etdName.text.toString())
                 binding.etAddress.setText(dialogBinding.etdAddress.text.toString())
-                binding.etGender.setText(dialogBinding.rbdMale.text.toString())
-                binding.etGender.setText(dialogBinding.rbdFemale.text.toString())
-                binding.etGender.setText(dialogBinding.rbdOther.text.toString())
+                if(binding.etGender.text.toString().equals("Male")) {
+                    dialogBinding.rbdMale.isChecked=true
+                }
+                else if(binding.etGender.text.toString().equals("Female")) {
+                    dialogBinding.rbdFemale.isChecked=true
+                }
+                else if(binding.etGender.text.toString().equals("Other")) {
+                    dialogBinding.rbdOther.isChecked=true
+                }
                 dialog.dismiss()
             }
             dialog.show()
