@@ -37,7 +37,9 @@ class MainActivity : AppCompatActivity() {
             update2.setOnClickListener{
                 binding.etName.setText(dialogBinding.etdName.text.toString())
                 binding.etAddress.setText(dialogBinding.etdAddress.text.toString())
-                binding.etOtherSpecify.setText(dialogBinding.etdOtherSpecify.text.toString())
+                binding.etGender.setText(dialogBinding.rbdMale.text.toString())
+                binding.etGender.setText(dialogBinding.rbdFemale.text.toString())
+                binding.etGender.setText(dialogBinding.rbdOther.text.toString())
                 dialog.dismiss()
             }
             dialog.show()
