@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             else if(binding.etGender.text.toString().equals("Other")) {
                 dialogBinding.rbdOther.isChecked=true
             }
+            else{}
             update2.setOnClickListener{
                 binding.etName.setText(dialogBinding.etdName.text.toString())
                 binding.etAddress.setText(dialogBinding.etdAddress.text.toString())
